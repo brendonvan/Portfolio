@@ -10,12 +10,19 @@
 }
 
 :root {
-  --theme-black: #2b2d42;
-  --theme-grey: #8d99ae;
-  --theme-white: #edf2f4;
-  --theme-off-red: #ef233c;
-  --theme-red: #d90429;
-  --white: #FFFFFF;
+  --theme-black: #0b090a;
+  --theme-secondary-black: #161a1d;
+  --theme-secondary-black-translucent: rgba(22, 26, 29, 25%);
+  --theme-dark-red: #660708;
+  --theme-secondary-dark-red: #a4161a;
+  --theme-light-red: #ba181b;
+  --theme-secondary-light-red: #e5383b;
+  --theme-dark-white: #b1a7a6;
+  --theme-dark-white-translucent: rgba(177, 167, 166, 25%);
+  --theme-secondary-dark-white: #d3d3d3;
+  --theme-light-white: #f5f3f4;
+  --theme-secondary-light-white: #ffffff;
+  --theme-light-blue: #4cc9f0;
 }
 
 html {
@@ -31,7 +38,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
-  color: var(--white);
+  color: var(--theme-secondary-light-white);
 }
 
 .App {
@@ -46,19 +53,35 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header-wrapper {
   font-family: Mark Pro Bold, sans-serif;
-  width: 64rem;
+  width: 80%;
   height: 50rem;
   margin-top: 8rem;
   
 }
 
-.header-wrapper h1 {
-  font-size: 5.5rem;
-  letter-spacing: -0.3rem;
+#header-deadlines {
+  color: var(--theme-light-red);
 }
 
-.header-wrapper p {
-  margin-top: 8rem;
-  color: var(--theme-grey);
+#header-challenging {
+  color: var(--theme-light-blue);
+}
+
+.header-wrapper h1 {
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  letter-spacing: -0.3rem;
+  margin-bottom: 16rem;
+}
+
+.header-wrapper a {
+  color: var(--theme-dark-white);
   letter-spacing: 0.3rem;
+  text-decoration: none;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
 }

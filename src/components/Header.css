@@ -7,11 +7,11 @@
 }
 
 .header {
-    width: 50%;
+    width: 80%;
     height: 4rem;
-    background-color: rgba(141, 153, 174, 25%);
+    background-color: var(--theme-secondary-black-translucent);
     margin-top: 3rem;
-    border: 0.5px solid rgba(141, 153, 174, 25%);
+    border: 0.5px solid var(--theme-secondary-black-translucent);
     border-radius: 1rem;
     display: flex;
     align-items: center;

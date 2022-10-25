@@ -8,10 +8,23 @@ function App() {
       <Header />
       <div className='main'>
         <div className='header-wrapper'>
-          <h1>I'm used to <br></br> tight deadlines <br></br> and challenging  tasks.</h1>
-          <p>VIEW PROJECTS</p>
+          <h1>
+            <span>I'm used to</span> 
+            <br></br>
+            <span>tight </span>
+            <span id='header-deadlines'>deadlines</span>
+            <br></br> 
+            <span>and </span>
+            <span id='header-challenging'>challenging </span>  
+            <span>tasks.</span>
+          </h1>
+          
+          <div className='contact-info'>
+            <a href='#projects'>VIEW PROJECTS</a>
+            <h4>👾 GH 🐦 TW 💼 LD 📸 IN</h4>
+          </div>
         </div>
-        <div></div>
+        
       </div>
       <Footer />
     </div>

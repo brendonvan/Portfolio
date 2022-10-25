@@ -1,38 +1,64 @@
+@font-face {
+  font-family: 'Mark Pro Bold';
+  src: url(../public/fonts/Mark-Pro-Bold/Mark-Pro-Bold.ttf);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --theme-black: #2b2d42;
+  --theme-grey: #8d99ae;
+  --theme-white: #edf2f4;
+  --theme-off-red: #ef233c;
+  --theme-red: #d90429;
+  --white: #FFFFFF;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-black);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  color: var(--white);
+}
+
 .App {
-  text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-wrapper {
+  font-family: Mark Pro Bold, sans-serif;
+  width: 64rem;
+  height: 50rem;
+  margin-top: 8rem;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-wrapper h1 {
+  font-size: 5.5rem;
+  letter-spacing: -0.3rem;
+}
+
+.header-wrapper p {
+  margin-top: 8rem;
+  color: var(--theme-grey);
+  letter-spacing: 0.3rem;
 }

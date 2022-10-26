@@ -27,11 +27,63 @@
 }
 
 .header-left img {
-    width: 140%;
-    height: 140%;
-    margin: -4.5rem 0 0 -1rem;
+    width: 300%;
+    height: 300%;
+    margin: -15.5rem 0 0 -2.5rem;
 }
 
 .header-right {
+    width: 50px;
+    height: 50px;
     margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.header-menu {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+}
+
+.header-menu span {
+    background: #fff;
+    width: 100%;
+    height: 1.5px;
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+
+}
+
+.header-menu .line-1 {
+    transform: translate(-50%, -10px);
+    transform-origin: 0 0;
+}
+
+.header-menu .line-3 {
+    width: 50%;
+    left: auto;
+    right: 0;
+    transform: translate(-100%, 9px);
+    transform-origin: 100% 0;
+}
+
+.open .line-1 {
+    width: 50%;
+    transform: translate(0%, 0%) rotate(-45deg);
+}
+.open .line-3 {
+    transform: translate(-100%, 0%) rotate(-45deg);
+}
+
+.open .line-2 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+

@@ -11,7 +11,7 @@
     height: 4rem;
     background-color: var(--theme-secondary-black-translucent);
     margin-top: 3rem;
-    border: 0.5px solid var(--theme-secondary-black-translucent);
+    border: 0.5px solid var(--theme-dark-white-translucent);
     border-radius: 1rem;
     display: flex;
     align-items: center;
@@ -22,6 +22,14 @@
 
 .header-left {
     margin-left: 2rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.header-left img {
+    width: 140%;
+    height: 140%;
+    margin: -4.5rem 0 0 -1rem;
 }
 
 .header-right {

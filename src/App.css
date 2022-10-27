@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 @keyframes slide-left {
   to {
-    transform: translateX(-550%);
+    transform: translateX(-600%);
   }
 }
 
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   100% {
     display: block;
-    transform:translateX(-2.5%);
+    transform:translateX(-50%);
   }
 }
 
@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6, p {
   font-family: Mark Pro Bold, sans-serif;
   width: 80%;
   height: 50rem;
-  margin-top: 4rem;
+  margin-top: 8rem;
   font-size: 3rem;
   color: var(--theme-secondary-light-white);
   display: flex;
@@ -279,9 +279,8 @@ h1, h2, h3, h4, h5, h6, p {
 .about-me-boxes {
   width: 70rem;
   height: 20rem;
-  border: 2px solid var(--theme-secondary-light-white);
   display: flex;
-
+  margin-bottom: 16rem;
 }
 
 .about-me-box1, .about-me-box2, .about-me-box3 {
@@ -291,7 +290,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   align-items: center;
   flex-flow: column;
-
+  padding-bottom: 4rem;
 }
 
 .about-me-box1 h6, .about-me-box2 h6, .about-me-box3 h6 {
@@ -320,5 +319,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .projects {
-  height: 40rem;
+  height: 60rem;
+}
+
+.projects h1 {
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  letter-spacing: -0.2rem;
+  margin-bottom: 4rem;
+  text-align: center;
 }

@@ -42,8 +42,6 @@ function App() {
             <h4>
               <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>
               <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://www.linkedin.com/in/brendon-van/' target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="linkedin" /></a> </span>
-              <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://twitter.com/BrendonVan_/' target="_blank" rel="noopener noreferrer"><img src="./icons/twitter.svg" alt="twitter" /></a> </span>
-              <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://www.instagram.com/brendon_van/' target="_blank" rel="noopener noreferrer"><img src="./icons/instagram.svg" alt="instagram" /></a> </span>
               <span className={ showEmail ? 'contact-points email moved' : 'contact-points email' }><img onClick={ () => { toggleEmail() } } src="./icons/email.svg" alt="email" /> </span>
               <span className={ showEmail ? 'show-email' : 'hide-email' }>brendon@van.digital</span>
             </h4>
@@ -76,7 +74,9 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='projects'></div>
+        <div className='projects'>
+          <h1>My Work</h1>
+        </div>
         
       </div>
       <Footer />

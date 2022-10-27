@@ -1,5 +1,60 @@
 .footer {
     width: 100%;
-    height: 4rem;
+    height: 20rem;
     background-color: var(--theme-secondary-black-translucent);
+    display: flex;
+}
+
+.footer .contact-me {
+    width: 50%;
+    padding: 4rem;
+}
+
+.footer .contact-me p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: -2rem;
+    
+}
+
+.footer .contact-info {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer .testimonials {
+    width: 50%;
+    background-color: var(--theme-secondary-dark-blue);
+    padding: 2rem;
+}
+
+.testimonial-image {
+    display: flex;
+    justify-content: space-between;
+}
+.testimonial-image img:first-child {
+    margin-top: -2rem;
+
+}
+
+.testimonial-image img:last-child {
+    width: 5rem;
+    height: 5rem;
+    border: 2px solid var(--theme-secondary-dark-white);
+    border-radius: 16rem;
+
+}
+
+.testimonials p {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.testimonials span {
+    color: var(--theme-secondary-light-white);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
 }

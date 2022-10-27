@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #header-deadlines {
-  background: linear-gradient(-45deg, var(--theme-dark-red), var(--theme-dark-red), var(--theme-dark-red), var(--theme-secondary-dark-red), var(--theme-light-red), var(--theme-light-red), var(--theme-secondary-dark-red), var(--theme-dark-red), var(--theme-dark-red), var(--theme-dark-red));
+  background: linear-gradient(-45deg, var(--theme-dark-red), var(--theme-dark-red), var(--theme-dark-red), var(--theme-secondary-dark-red), var(--theme-light-red), var(--theme-secondary-light-red), var(--theme-light-red), var(--theme-secondary-dark-red), var(--theme-dark-red), var(--theme-dark-red), var(--theme-dark-red));
   background-size: 2000%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;

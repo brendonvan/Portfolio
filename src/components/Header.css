@@ -18,6 +18,7 @@
     justify-content: space-between;
     backdrop-filter: blur(1rem);
     position: fixed;
+    z-index: 5;
 }
 
 .header-left {

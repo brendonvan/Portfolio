@@ -73,7 +73,7 @@ function App() {
             </div>
           </div>
         </div>
-        {/* <div className='projects'>
+        <div className='projects'>
           <div className='project-header'>
             <div className='project-header-left'>
               <h1>My Work</h1>
@@ -113,7 +113,7 @@ function App() {
             </div>
           </div>
         </div>
-         */}
+        
       </div>
       <Footer />
     </div>

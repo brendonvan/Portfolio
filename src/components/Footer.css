@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 20rem;
+    height: 100%;
     background-color: var(--theme-secondary-black-translucent);
     display: flex;
 }
@@ -58,3 +58,4 @@
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
+

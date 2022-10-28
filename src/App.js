@@ -75,7 +75,44 @@ function App() {
           </div>
         </div>
         <div className='projects'>
-          <h1>My Work</h1>
+          <div className='project-header'>
+            <div className='project-header-left'>
+              <h1>My Work</h1>
+            </div>
+            <div className='project-header-right'>
+              <h1>3D IMG HERE</h1>
+            </div>
+          </div>
+          <div className='project-portfolio'>
+            <div className='project-card stacked featured'>
+              <img src="./projects/netflix.png" alt="tesla-project" />
+              <div className='project-card-content'>
+                <h2>Tesla Reimagined</h2>
+                <p>Web Development</p>
+              </div>
+            </div>
+            <div className='project-card stacked'>
+              <img src="./projects/netflix.png" alt="netflix-project" />
+              <div className='project-card-content'>
+                <h2>Netflix Reimagined</h2>
+                <p>Web Development</p>
+              </div>
+            </div>
+            <div className='project-card stacked'>
+              <img src="./projects/netflix.png" alt="spotify-project" />
+              <div className='project-card-content'>
+                <h2>Spotify Clone</h2>
+                <p>Web Development</p>
+              </div>
+            </div>
+            <div className='project-card stacked'>
+              <img src="./projects/netflix.png" alt="2048-project" />
+              <div className='project-card-content'>
+                <h2>2048</h2>
+                <p>Web Development</p>
+              </div>
+            </div>
+          </div>
         </div>
         
       </div>

@@ -33,10 +33,12 @@
   --theme-secondary-dark-blue: #4361ee; 
   --theme-light-blue: #4895ef;
   --theme-secondary-light-blue: #4cc9f0;
+  
 }
 
 html {
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   height: auto;
   background-color: var(--theme-black);
 }
@@ -51,10 +53,6 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--theme-secondary-light-white);
 }
 
-.App {
-
-}
-
 .main {
   display: flex;
   align-items: center;
@@ -65,7 +63,7 @@ h1, h2, h3, h4, h5, h6, p {
 .header-wrapper {
   font-family: Mark Pro Bold, sans-serif;
   width: 80%;
-  height: 50rem;
+  height: 50em;
   margin-top: 8rem;
   display: flex;
   align-items: center;
@@ -78,10 +76,8 @@ h1, h2, h3, h4, h5, h6, p {
   position: relative;
   width: 100%;
   height: 6rem;
-  font-size: 4rem;
+  font-size: 1em;
   overflow: hidden;
-  
-  
 }
 
 .slider div {
@@ -106,22 +102,16 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #greeting {
-  font-size: 8rem;
-  
+  font-size: 2em;
 }
 
 #name {
-  font-size: 8rem;
+  font-size: 2em;
   background: linear-gradient(-45deg, var(--theme-light-pink), var(--theme-dark-pink), var(--theme-light-purple), var(--theme-secondary-light-purple), var(--theme-dark-purple), var(--theme-secondary-dark-purple), var(--theme-dark-blue), var(--theme-secondary-dark-blue), var(--theme-light-blue), var(--theme-secondary-light-blue), var(--theme-light-blue), var(--theme-secondary-dark-blue), var(--theme-dark-blue), var(--theme-secondary-dark-purple), var(--theme-dark-purple), var(--theme-secondary-light-purple), var(--theme-light-purple), var(--theme-dark-pink), var(--theme-light-pink));
   background-size: 2000%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   animation: animate 7s linear infinite;
-}
-
-#title {
-  font-size: 3rem;
-  color: #ffffff;
 }
 
 #header-deadlines {
@@ -149,6 +139,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+
 .header-wrapper h1 {
   font-size: 4rem;
   line-height: 5.5rem;
@@ -160,6 +151,29 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--theme-dark-white);
   letter-spacing: 0.3rem;
   text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .header-wrapper {
+    height: 30em;
+  }
+  .header-wrapper h1 {
+    margin-bottom: 0rem;
+
+  line-height: 4rem;
+  }
+  #greeting {
+    font-size: 1em;
+  }
+  #name {
+    font-size: 1em;
+  }
+  .slider {
+    margin-top: 5rem;
+    font-size: 0.5em;
+    letter-spacing: 0.1rem;
+    line-height: 2.2rem;
+  }
 }
 
 .contact-info {
@@ -176,7 +190,6 @@ h1, h2, h3, h4, h5, h6, p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .moved {
@@ -243,6 +256,42 @@ h1, h2, h3, h4, h5, h6, p {
   color: transparent;
 }
 
+@media (max-width: 480px) {
+  .contact-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    margin-top: -4rem;
+    margin-left: -0.5rem;
+    overflow: hidden;
+    position: relative;
+  }
+  .contact-info-landing {
+    display: none;
+  }
+
+  @keyframes slide-left {
+    to {
+      transform: translateX(-300%);
+    }
+  }
+  @keyframes appear {
+    0% {
+      display: none;
+      transform:translateX(100%);
+    }
+    100% {
+      display: block;
+      transform:translateX(5%);
+    }
+  }
+  .contact-points {
+    margin-top: 1rem;
+  }
+}
+
 .scroll-down {
   display: none;
   transform: rotate(90deg);
@@ -253,8 +302,9 @@ h1, h2, h3, h4, h5, h6, p {
 .about-me {
   font-family: Mark Pro Bold, sans-serif;
   width: 80%;
-  height: 50rem;
+  height: auto;
   margin-top: 8rem;
+  margin-bottom: 8rem;
   font-size: 3rem;
   color: var(--theme-secondary-light-white);
   display: flex;
@@ -279,19 +329,26 @@ h1, h2, h3, h4, h5, h6, p {
 .about-me-boxes {
   width: 70rem;
   height: 20rem;
-  display: flex;
-  margin-bottom: 16rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .about-me-boxes {
+    height: auto;
+    grid-template-columns: 1fr;
+  }
 }
 
 .about-me-box1, .about-me-box2, .about-me-box3 {
   border: 2px solid var(--theme-secondary-light-white);
-  width: 33.33%;
   display: flex;
   text-align: center;
   align-items: center;
   flex-flow: column;
   padding-bottom: 4rem;
 }
+
 
 .about-me-box1 h6, .about-me-box2 h6, .about-me-box3 h6 {
   margin-top: 2rem;

@@ -20,12 +20,12 @@ const Footer = () => {
                 <p>Have an exciting project you need help with?<br></br>
 Send me an email or contact me via instant message!</p>
                 <div className='contact-info'>
-                    <h4>
+                    <div>
                         <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>
                         <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://www.linkedin.com/in/brendon-van/' target="_blank" rel="noopener noreferrer"><img src="./icons/linkedin.svg" alt="linkedin" /></a> </span>
                         <span className={ showEmail ? 'contact-points email moved' : 'contact-points email' }><img onClick={ () => { toggleEmail() } } src="./icons/email.svg" alt="email" /> </span>
-                        <span className={ showEmail ? 'show-email' : 'hide-email' }>brendon@van.digital</span>
-                    </h4>
+                        <h4><span className={ showEmail ? 'show-email' : 'hide-email' }>brendon@van.digital</span></h4>
+                    </div>
                 </div>
             </div>
             <div className='testimonials'>

@@ -21,6 +21,12 @@
     z-index: 5;
 }
 
+/* @media (max-width: 480px) {
+    .header {
+        width: 80%;
+    }
+} */
+
 .header-left {
     margin-left: 2rem;
     width: 10rem;

@@ -333,7 +333,7 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
   .about-me h1 {
     font-size: 1em;
     margin-top: 2em;
@@ -478,7 +478,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .project-header {
     display: flex;
     flex-flow: column wrap; 
@@ -496,7 +496,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 100%;
   }
   .project-card {
-    width: 65%;
+    width: 80vw;
     aspect-ratio: 1 / .75;
     border-radius: 0.5rem;
   }

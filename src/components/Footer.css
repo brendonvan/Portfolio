@@ -59,3 +59,20 @@
     font-size: 1.2rem;
 }
 
+@media (max-width: 480px) {
+    .footer {
+        flex-flow: column wrap;
+    }
+    .footer .contact-me {
+        width: 100%;
+        padding: 2rem;
+    }
+    .contact-me .contact-info {
+        margin-top: 5rem;
+    }
+    .footer .testimonials {
+        width: 100%;
+        background-color: var(--theme-secondary-dark-blue);
+        padding: 2rem;
+    }
+}

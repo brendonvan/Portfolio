@@ -47,7 +47,7 @@ function App() {
           </div>
           <div className={ showEmail ? 'show-hint' : 'hide-hint' }>---{'>'} Email copied to clipboard! {'<'}---</div>
         </div>
-        {/* <div className='about-me'>
+        <div className='about-me'>
           <h1>My Expertise</h1>
           <div className='about-me-desc'>
             <span>I'm used to </span> 
@@ -72,7 +72,7 @@ function App() {
               <p>Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.</p>
             </div>
           </div>
-        </div> */}
+        </div>
         {/* <div className='projects'>
           <div className='project-header'>
             <div className='project-header-left'>

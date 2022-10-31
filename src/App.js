@@ -18,7 +18,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" id='home'>
       <Header />
       <div className='main'>
         <div className='header-wrapper'>
@@ -47,6 +47,7 @@ function App() {
           </div>
           <div className={ showEmail ? 'show-hint' : 'hide-hint' }>---{'>'} Email copied to clipboard! {'<'}---</div>
         </div>
+        <div id='expertise'></div>
         <div className='about-me'>
           <h1>My Expertise</h1>
           <div className='about-me-desc'>
@@ -73,7 +74,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='projects'>
+        <div className='projects' id='work'>
           <div className='project-header'>
             <div className='project-header-left'>
               <h1>My Work</h1>
@@ -84,7 +85,7 @@ function App() {
           </div>
           <div className='project-portfolio'>
             <div className='project-card stacked featured'>
-              <img src="./projects/netflix.png" alt="tesla-project" />
+              <img src="./projects/tesla.png" alt="tesla-project" />
               <div className='project-card-content'>
                 <h2>Tesla Reimagined</h2>
                 <p>Web Development</p>
@@ -98,17 +99,24 @@ function App() {
               </div>
             </div>
             <div className='project-card stacked'>
-              <img src="./projects/netflix.png" alt="spotify-project" />
+              <img src="./projects/spotify.png" alt="spotify-project" />
               <div className='project-card-content'>
                 <h2>Spotify Clone</h2>
                 <p>Web Development</p>
               </div>
             </div>
             <div className='project-card stacked'>
-              <img src="./projects/netflix.png" alt="2048-project" />
+              <img src="./projects/2048.png" alt="2048-project" />
               <div className='project-card-content'>
                 <h2>2048</h2>
                 <p>Web Development</p>
+              </div>
+            </div>
+            <div className='project-card stacked'>
+              <img src="./projects/pokedex.png" alt="pokedex-project" />
+              <div className='project-card-content'>
+                <h2>Pokedex</h2>
+                <p id='contact'>Web Development</p>
               </div>
             </div>
           </div>

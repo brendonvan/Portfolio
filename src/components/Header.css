@@ -19,6 +19,12 @@
     backdrop-filter: blur(1rem);
     position: fixed;
     z-index: 5;
+    transition-timing-function: ease-in;
+    transition: 0.5s;
+}
+
+.hide-nav {
+    transform: translateY(-400px);
 }
 
 /* @media (max-width: 480px) {
@@ -40,12 +46,23 @@
 }
 
 .header-right {
-    width: 50px;
-    height: 50px;
-    margin-right: 2rem;
+    margin-right: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-right a {
+    color: var(--theme-secondary-light-white);
+    font-size: 1.2rem;
+    font-family: Mark Pro Bold, sans-serif;
+    text-decoration: none;
+    margin-right: 1.2rem;
+}
+
+.header-right a:hover {
+    color: var(--theme-secondary-dark-white);
+    
 }
 
 .header-menu {

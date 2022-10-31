@@ -331,6 +331,7 @@ h1, h2, h3, h4, h5, h6, p {
   height: 20rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 4rem;
 }
 
 @media (max-width: 1200px) {
@@ -385,7 +386,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .projects {
   width: 80%;
-  /* height: 60rem; */
 }
 
 .project-header h1 {
@@ -393,7 +393,6 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 8rem;
   line-height: 8rem;
   letter-spacing: -0.2rem;
-  /* margin-left: 8rem; */
   margin-bottom: 4rem;
   text-align: left;
 }
@@ -468,7 +467,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .project-card.featured img {
-  aspect-ratio: 1 / 0.76;
+  /* aspect-ratio: 1 / .5; */
 }
 
 @media (max-width: 1200px) {

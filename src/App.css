@@ -427,15 +427,24 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .project-card {
-  aspect-ratio: 1 / .75;
+  aspect-ratio: 1 / 0.66;
   border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .project-card img {
   width: 100%;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  z-index: 0;
 }
+
+.project-card img:hover {
+  transform: scale(1.1);
+  z-index: 0;
+  cursor: pointer;
+}
+
 
 .stacked {
   display: grid;
@@ -447,11 +456,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .project-card-content {
-  height: 8rem;
+  height: auto;
   background-color: var(--theme-secondary-black);
   align-self: end;
-  padding: 2rem;
+  padding: 1rem 1rem 1rem 1rem;
+  margin-top: -2rem;
   border-radius: 0 0 0.5rem 0.5rem;
+  z-index: 2;
 }
 
 .project-card-content p {
@@ -459,6 +470,23 @@ h1, h2, h3, h4, h5, h6, p {
   font-weight: 600;
   color: var(--theme-secondary-dark-white);
   margin-top: 0.5rem;
+}
+
+.project-card-content a {
+  text-decoration: underline;
+  text-decoration-color: var(--theme-secondary-dark-white);
+}
+
+.project-card-content img {
+  width: 5.5rem;
+  height: 1.5rem;
+  border-radius: 0;
+  margin-top: 1rem;
+}
+
+.project-card-content img:hover {
+  transform: scale(1);
+  cursor: default;
 }
 
 .project-card.featured {

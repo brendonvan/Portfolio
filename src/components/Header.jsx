@@ -33,7 +33,7 @@ const Header = () => {
                     <a href='#expertise'>Expertise</a>
                     <a href='#work'>Work</a>
                     <a href='#contact'>Contact</a>
-                    <a href='#resume'>Resume</a>
+                    <a href="./Brendon-Van-Resume.pdf" download rel="noopener noreferrer" target="_blank">Resume</a>
                 </div>
 
 

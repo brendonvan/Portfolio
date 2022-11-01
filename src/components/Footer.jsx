@@ -16,9 +16,8 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className='contact-me'>
-                <h1>Available for select freelance opportunities</h1>
-                <p>Have an exciting project you need help with?<br></br>
-Send me an email or contact me via instant message!</p>
+                <h1>Contact Me</h1>
+                <p>Have an exciting project you need help with?<br></br> Send me an email or contact me via instant message!</p>
                 <div className='contact-info'>
                     <div>
                         <span className={ showEmail ? 'contact-points moved' : 'contact-points' }><a href='https://github.com/brendonvan/' target="_blank" rel="noopener noreferrer"><img src="./icons/github.svg" alt="github" /></a> </span>

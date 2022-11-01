@@ -62,15 +62,15 @@ function App() {
           <div className='about-me-boxes'>
             <div className='about-me-box1'>
               <h6><span>Software</span> <br></br> <span>Development</span></h6>
-              <p>Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.</p>
+              <p>Experienced in both functional and OOP: Java, JavaScript, Python, Dart, TypeScript.</p>
             </div>
             <div className='about-me-box2'>
               <h6><span>Frontend Dev</span> <br></br> <span>React, NextJS</span></h6>
-              <p>Passionate about UI/UX. Over 4 years of development experience in HTML, CSS, JS, React and NextJS frameworks.</p>
+              <p>Passionate about UI/UX. Over 2 years of development experience in HTML, CSS, JS, React and NextJS frameworks.</p>
             </div>
             <div className='about-me-box3'>
-              <h6><span>Flutter Dev</span> <br></br> <span>Android, iOS</span></h6>
-              <p>Skilled in developing hybrid mobile apps and cross-platform solutions using the Flutter framework.</p>
+              <h6><span>Flutter Dev</span> <br></br> <span>iOS, Android</span></h6>
+              <p>Developed hybrid mobile apps and cross-platform solutions using the Flutter framework.</p>
             </div>
           </div>
         </div>
@@ -84,39 +84,68 @@ function App() {
             </div>
           </div>
           <div className='project-portfolio'>
-            <div className='project-card stacked featured'>
-              <img src="./projects/tesla.png" alt="tesla-project" />
+            <div className='project-card featured stacked'>
+              <a href='https://tesla-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer"><img src="./projects/tesla.png" alt="tesla-project" /></a>
               <div className='project-card-content'>
                 <h2>Tesla Reimagined</h2>
-                <p>Web Development</p>
+                <span><p>Tesla Clone but with UI/UX inspired by Nickelfox & Kushanthi Hasinika. CRUD funcationality for user authentication and cultivating car designs using Spring Boot.</p></span><a href='https://github.com/brendonvan/Tesla-Reimagined/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                <img src='https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E' alt='javascript'></img>
+                <img src='https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white' alt='html'></img>
+                <img src='https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white' alt='css'></img>
+                <img src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' alt='react'></img>
+                <img src='https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white' alt='redux'></img>
+                <img src='https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white' alt='three.js'></img>
+                <img src='https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white' alt='java'></img>
+                <img src='https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white' alt='spring'></img>
+                <img src='https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white' alt='sql'></img>
               </div>
             </div>
             <div className='project-card stacked'>
-              <img src="./projects/netflix.png" alt="netflix-project" />
+              <a href='https://netflix-reimagined.netlify.app/' target="_blank" rel="noopener noreferrer"><img src="./projects/netflix.png" alt="netflix-project" /></a>
               <div className='project-card-content'>
                 <h2>Netflix Reimagined</h2>
-                <p>Web Development</p>
+                <span><p>Netflix Clone but with UI/UX inspired by Jurre Houtkamp & Serge Strokov. CRUD funcationality for user authentication and cultivating watchlists. </p></span><a href='https://github.com/brendonvan/Netflix-Reimagined/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                
+                <img src='https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white' alt='mongodb'></img>
+                <img src='https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB' alt='express'></img>
+                <img src='https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB' alt='react'></img>
+                <img src='https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white' alt='redux'></img>
+                <img src='https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white' alt='node'></img>
               </div>
             </div>
             <div className='project-card stacked'>
-              <img src="./projects/spotify.png" alt="spotify-project" />
+              <a href='https://this-is-streamify.herokuapp.com/' target="_blank" rel="noopener noreferrer"><img src="./projects/spotify.png" alt="spotify-project" /></a>
               <div className='project-card-content'>
                 <h2>Spotify Clone</h2>
-                <p>Web Development</p>
+                <span><p>Recreated Spotify's search funcationality, utilizing CRUD for the playlists.</p></span><a href='https://github.com/brendonvan/This-Is-Streamify/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                
+                <img src='https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white' alt='mongodb'></img>
+                <img src='https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB' alt='express'></img>
+                <img src='https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white' alt='node'></img>
               </div>
             </div>
             <div className='project-card stacked'>
-              <img src="./projects/2048.png" alt="2048-project" />
+              <a href='https://brendonvan.github.io/2048-clone/' target="_blank" rel="noopener noreferrer"><img src="./projects/2048.png" alt="2048-project" /></a>
               <div className='project-card-content'>
-                <h2>2048</h2>
-                <p>Web Development</p>
+                <h2>2048 Clone</h2>
+                <span><p>The objective of the game is to slide numbered tiles on a grid to combine them to create a tile with the number 2048.</p></span><a href='https://github.com/brendonvan/2048-clone/' target="_blank" rel="noopener noreferrer"><p>Github</p></a>
+                <img src='https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E' alt='javascript'></img>
+                <img src='https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white' alt='html'></img>
+                <img src='https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white' alt='css'></img>
+                <img src='https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white' alt='node'></img>
+              
               </div>
             </div>
             <div className='project-card stacked'>
-              <img src="./projects/pokedex.png" alt="pokedex-project" />
+              <a href='https://pokedex-ga-project.herokuapp.com/pokedex/' target="_blank" rel="noopener noreferrer"><img src="./projects/pokedex.png" alt="pokedex-project" /></a>
               <div className='project-card-content'>
                 <h2>Pokedex</h2>
-                <p id='contact'>Web Development</p>
+                <span><p>Virtual Pokedex that encompasses the original 151 pokemon.</p></span><a href='https://github.com/brendonvan/pokedex/' target="_blank" rel="noopener noreferrer"><p id='contact'>Github</p></a>
+                <img src='https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E' alt='javascript'></img>
+                <img src='https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white' alt='html'></img>
+                <img src='https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white' alt='css'></img>
+                <img src='https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB' alt='express'></img>
+                <img src='https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white' alt='node'></img>
               </div>
             </div>
           </div>
